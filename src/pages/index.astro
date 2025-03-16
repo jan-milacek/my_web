@@ -5,46 +5,31 @@ const posts = await Astro.glob('./posts/*.md');
 const projects = await Astro.glob('./projects/*.md');
 ---
 
-<SidebarLayout title="t3ma - SEO and DEV ">
+<SidebarLayout title="Jan Milacek">
   <section class="about">
     <h2><span class="icon">👤</span> About me</h2>
-    <p>SEO is what I love. If you think that SEO is only about title, description and Semantic Core, then unfortunately not, this is just the tip of the iceberg.</p>
-  </section>
+    <p>I love exploring new technologies and using them to create real business impact. I enjoy working with data, digging into the details to find useful insights, and being involved in every step of data projects—from analysis to engineering.</p>
+    
+    <h2>My skills</h2>  
 
-  <section class="posts">
-    <h2><span class="icon">📡</span> Themes  </h2>
-    {posts.map((post) => (
-      <div class="post-item">
-        <a href={post.url} class="post-title">{post.frontmatter.title}</a>
-        <p class="post-description">{post.frontmatter.description}</p>
-      </div>
-    ))}
-  </section>
-
-  <section class="projects">
-    <h2><span class="icon">📁</span> Projects</h2>
-    {projects.map((project) => (
-      <div class="project-item">
-        <a href={project.url} class="project-title">{project.frontmatter.title}</a>
-        <p class="project-description">{project.frontmatter.description}</p>
-      </div>
-    ))}
-  </section>
-
-  <section class="experience">
-    <h2><span class="icon">💼</span> Work Experience</h2>
-    <div class="experience-item">
-      <div class="experience-header">
-        <span class="date">2020 - present</span>
-        <h3>Icons8.com - SEO</h3>
-      </div>
-      <div class="experience-header">
-        <span class="date">2010 - 2020</span>
-        <h3>Citysakh.ru - CEO</h3>
-      </div>
-    </div>
+    <h3>Data Solutions</h3>  
+    <p>I use Python, SQL, and Power BI to create data systems and analytics that help businesses make decisions. I handle everything from building data pipelines to designing reports and dashboards.</p>  
+  
+    <h3>Business Strategy & Analysis</h3>  
+    <p>I turn data into clear insights to spot trends, improve operations, and guide business choices. I focus on making complex data easy to understand so teams can take action.</p>  
+  
+    <h3>Security & Compliance</h3>  
+    <p>I prioritize keeping data safe and follow strict security rules to protect systems and ensure everything meets legal standards.</p>  
+  
+    <h3>Azure Cloud Work</h3>  
+    <p>I’ve helped design and build secure, scalable cloud setups on Azure, making sure they work smoothly with existing tools and perform reliably.</p>  
+  
+    <h3>Microsoft 365 Tools</h3>  
+    <p>I’ve set up Microsoft 365 solutions to boost teamwork and efficiency, like streamlining workflows and improving office productivity.</p>  
 
   </section>
+
+  
 </SidebarLayout>
 
 <style>
@@ -92,6 +77,13 @@ const projects = await Astro.glob('./projects/*.md');
     gap: 0.5rem;
   }
 
+  h3 {
+    margin-bottom: 8px; /* Default is usually 16px */
+  }
+
+  p {
+      margin-top: 4px; /* Default is usually 16px */
+    }
   .icon {
     font-size: 1.2rem;
   }

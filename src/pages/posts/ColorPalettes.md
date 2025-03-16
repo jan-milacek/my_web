@@ -10,7 +10,7 @@ DEMO [Discover Beautiful Color Palettes](https://colorpalette.wiki/)
 
 git clone https://github.com/temaprint/colorpalette
 
-A modern, feature-rich color palette application built with Astro and React. Browse, explore, and discover beautiful color combinations for your next project.
+A modern, feature-rich color palette application built with Astro and React. Browse, explore, and discover beautiful color combinations for your next project. Marek marek.
 
 
 
